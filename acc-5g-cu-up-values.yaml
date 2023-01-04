@@ -1,0 +1,10 @@
+global:
+  kubeIp: "10.0.120.6"
+  instanceId: "cuup-1"
+  tag: "R3.3.2-rc15_hoegaarden"
+  natsUrl: "10.0.120.6"
+  redisHostname: "10.0.120.6"
+
+netconf:
+  netconfService:
+    nodePort: 32761

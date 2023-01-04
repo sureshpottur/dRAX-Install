@@ -1,0 +1,43 @@
+# Mandatory parameters 
+
+# CU release version
+cu_version=5.0.0
+
+DOCKER_USER=accelleranguest
+DOCKER_PASS=accelleran
+DOCKER_EMAIL=admin@accelleran.com
+
+# The IP address of the Kubernetes node this CU is installed on.
+kubeIp="10.0.120.6"
+
+# A unique value that identifies the CU-CP. This value must be unique for each
+# CU-CP/CU-UP instance.
+cucpinstance="cucp-1"
+cuupinstance="cuup-1"
+
+# The maximum number of components to support.
+numOfAmfs=4
+numOfCuUps=4
+numOfDus=4
+numOfCells=4
+numOfUes=14
+
+# The addresses on which NATS and REDIS are listening. These do not need to be
+# changed.
+natsUrl="10.0.120.6"
+redisHostname="10.0.120.6"
+
+#netconfService.. The range of valid ports is 30000-32767
+cucp_nodePort=32761
+cuup_nodePort=32762
+# Define the IP pool which will be reserved for MetalLB to
+# give out to services. Make sure no other entity in the
+# network can use these IP addresses.
+ip_range=10.0.120.40-10.0.120.51
+
+# sctp:
+# The address on which the CU-CP will listen for F1 connections. This must be
+# an address in the MetalLB address range that is set in acc-5g-infrastructure-values.yaml.
+
+sctp_f1_ip="10.0.120.50"
+sctp_e1_ip="10.0.120.51"

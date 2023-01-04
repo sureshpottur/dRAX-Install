@@ -1,0 +1,26 @@
+global:
+  kubeIp: "10.0.120.6"
+  instanceId: "cucp-1"
+  numOfAmfs: 4
+  numOfCuUps: 4
+  numOfDus: 4
+  numOfCells: 4
+  numOfUes: 14
+  tag: "R3.3.2-rc15_hoegaarden"
+  natsUrl: "10.0.120.6"
+  redisHostname: "10.0.120.6"
+
+netconf:
+  netconfService:
+    nodePort: 32761
+
+
+# sctp:
+sctp-f1:
+  f1Service:
+    loadBalancerIP: "10.0.120.50"
+
+
+sctp-e1:
+  e1Service:
+    loadBalancerIP: "10.0.120.51"
